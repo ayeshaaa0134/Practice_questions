@@ -1,0 +1,26 @@
+#include <iostream>
+
+class Dog {
+public:
+    std::string name;
+
+    Dog(std::string dogName) {
+        name = dogName;
+    }
+
+    void bark() {
+        std::cout << name << " says Woof!\n";
+    }
+};
+
+int main() {
+    Dog myDog("Buddy");
+
+    myDog.bark();
+
+    Dog otherDog("Lucy");
+
+    otherDog.bark();
+
+    return 0;
+}
