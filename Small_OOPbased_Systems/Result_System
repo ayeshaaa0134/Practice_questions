@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+class Student {
+public:
+    std::string name;
+    int score;
+
+    Student(std::string n, int s) {
+        name = n;
+        score = s;
+    }
+
+    void displayResult() {
+        std::cout << name << ": " << score << "/100\n";
+    }
+};
+
+int main() {
+    Student s1("Alice", 85);
+    s1.displayResult();
+
+    Student s2("Bob", 62);
+    s2.displayResult();
+
+    return 0;
+}
